@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-section">
+        <div class="input-container">
+          <div class="input-div">
+            <p>DAY</p>
+            <input type="text" class="input" id="day" placeholder="DD" />
+            <div class="err">
+              <p class="err-messageDay">Please Enter a Valid Date!</p>
+            </div>
+          </div>
+          <div class="input-div">
+            <p>MONTH</p>
+            <input type="text" class="input" id="month" placeholder="MM" />
+            <div class="err">
+              <p class="err-messageMonth">Please Enter a Valid Date!</p>
+            </div>
+          </div>
+          <div class="input-div">
+            <p>YEAR</p>
+            <input type="text" class="input" id="year" placeholder="YYYY" />
+            <div class="err">
+              <p class="err-messageYear">Please Enter a Valid Date!</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn" id="result-btn">
+          <img src="assets/images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+      <div class="bottom-section">
+        <div class="age">
+          <h1><span id="output-year"> --</span> years</h1>
+          <h1><span id="output-month">--</span> months</h1>
+          <h1><span id="output-day">--</span> days</h1>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

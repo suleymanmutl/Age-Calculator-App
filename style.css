@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  ---Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  background-color: var(---Purple);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 12px;
+  position: absolute;
+  right: 30px;
+  top: 27%;
+  transition: all 0.3s ease;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(0.8);
+  transform: rotate(360deg);
+  background-color: hsl(259, 89%, 55%);
+}
+
+img:active{
+  transform: scale(0.8);
+}
+
+.container {
+  background-color: var(--White);
+  padding: 1.5rem;
+  padding-right: 5rem;
+  border-radius: 20px;
+  border-bottom-right-radius: 100px;
+  position: relative;
+}
+
+.top-section {
+  display: flex;
+  border-bottom: 1px solid var(--Light-grey);
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.input-div {
+  margin: 10px 15px 10px 0;
+}
+
+.input-div p {
+  letter-spacing: 0.2rem;
+  font-size: 10px;
+  color: var(--Smokey-grey);
+  margin-bottom: 0.3rem;
+}
+
+.input {
+  width: 100px;
+  height: 3rem;
+  padding: 10px;
+  font-size: 23px;
+  border: 2px solid var(--Light-grey);
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+.bottom-section {
+  margin: 1.5rem 0;
+  font-size: 30px;
+  font-style: italic;
+  color: var(--Off-black);
+  line-height: 60px;
+}
+
+.bottom-section .age span {
+  color: var(---Purple);
+}
+
+button {
+  border: none;
+}
+
+.err p {
+  display: none;
+  width: 150px;
+  position: absolute;
+  letter-spacing: normal;
+  color: rgb(224, 17, 17);
+  margin: 0;
+  padding: 0 2rem 0 0;
+}
+
+
+@media only screen  and (max-width: 486px) {
+  .container{
+    width: 377px;
+  }
+  .age{
+    font-size: 20px;
+  }
+}
